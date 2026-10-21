@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e8ecef;
+  color: #16202b;
+  line-height: 1.5;
+}
+
+/* Header */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #16202b;
+  color: white;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Layout */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #c5ced6;
+  padding: 20px;
+}
+
+.wide {
+  grid-column: 1 / -1;
+}
+
+/* Forms */
+form {
+  display: grid;
+  gap: 6px;
+}
+
+input,
+select,
+button {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #c5ced6;
+}
+
+button {
+  background-color: #d9822b;
+  border-color: #d9822b;
+  color: white;
+  cursor: pointer;
+}
+
+button.secondary {
+  background-color: white;
+  color: #16202b;
+  border-color: #c5ced6;
+}
+
+button:focus,
+input:focus,
+select:focus {
+  outline: 3px solid #16202b;
+}
+
+/* Status message */
+#status {
+  margin: 0;
+  padding: 8px 24px;
+  min-height: 32px;
+}
+
+#status.error {
+  color: #b3372f;
+  font-weight: bold;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Match list */
+#matches {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#matches li {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 12px;
+  background-color: #f6f8f9;
+  border-left: 6px solid #c5ced6;
+}
+
+#matches li.win {
+  border-left-color: #2f7d4f;
+}
+
+#matches li.loss {
+  border-left-color: #b3372f;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+/* Stats tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 6px;
+  text-align: left;
+  border-bottom: 1px solid #c5ced6;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+}
+
