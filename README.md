@@ -11,9 +11,9 @@ Track Call of Duty Mobile scrims and tournament matches, and see win rates by mo
 ## Setup
 ```bash
 npm install
-npm run server   # API on http://localhost:3000
-npm start        # frontend on http://localhost:8080
-npm test         # Jest with coverage
+npm run server   
+npm start        
+npm test        
 ```
 Set `BASE_URL` in `js/config.js` to your deployed API before deploying the frontend.
 
@@ -34,6 +34,9 @@ HTML, CSS, JavaScript (ES modules), JSON Server 0.17.4, json-server-auth, Jest.
 Public API: https://restcountries.com
 
 ## Deployment
-- Frontend (GitHub Pages): _add link_
-- API (host with persistent disk): _add link_
+- Frontend (GitHub Pages): https://brianmbithi1.github.io/CODM_Scrim/login.html
+- API (Render, free tier): https://codm-scrim.onrender.com
 
+Note: the free Render tier has an ephemeral filesystem, so API data resets when the
+server restarts or spins down after inactivity. A paid persistent disk would remove
+this limitation (set DATA_DIR to the disk's mount path).
