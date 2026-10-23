@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CODM Scrim Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Scrim Manager</h1>
+    <div><span id="user-info"></span> <button id="logout" type="button">Log out</button></div>
+  </header>
+  <p id="status" role="status" aria-live="polite"></p>
+  <main>
+    <section aria-labelledby="form-title">
+      <h2 id="form-title">Log a match</h2>
+      <form id="match-form" novalidate>
+        <label for="opponent">Opponent</label>
+        <input id="opponent" name="opponent" required>
+        <label for="mode">Mode</label>
+        <select id="mode" name="mode">
+          <option>Hardpoint</option><option>Search &amp; Destroy</option><option>Control</option><option>Domination</option>
+        </select>
+        <label for="map">Map</label>
+        <input id="map" name="map" required>
+        <label for="scoreFor">Our score</label>
+        <input id="scoreFor" name="scoreFor" type="number" min="0" required>
+        <label for="scoreAgainst">Their score</label>
+        <input id="scoreAgainst" name="scoreAgainst" type="number" min="0" required>
+        <label for="date">Date</label>
+        <input id="date" name="date" type="date" required>
+        <label for="matchStatus">Status</label>
+        <select id="matchStatus" name="status"><option value="played">Played</option><option value="scheduled">Scheduled</option></select>
+        <button type="submit" id="save">Save match</button>
+        <button type="button" id="cancel" hidden>Cancel edit</button>
+      </form>
+    </section>
+    <section aria-labelledby="stats-title">
+      <h2 id="stats-title">Win rates</h2>
+      <div id="stats"></div>
+    </section>
+    <section aria-labelledby="list-title" class="wide">
+      <h2 id="list-title">Matches</h2>
+      <div class="filters">
+        <label for="f-mode">Mode</label>
+        <select id="f-mode"><option value="">All</option></select>
+        <label for="f-result">Result</label>
+        <select id="f-result"><option value="">All</option><option>win</option><option>loss</option></select>
+      </div>
+      <ul id="matches"></ul>
+    </section>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,1 +1,15 @@
-{ "users": [], "teams": [], "matches": [] }
+{
+  "users": [
+    {
+      "email": "mbithibrian708@gmail.com",
+      "password": "$2a$10$tKQOSIIPx5Z7GDouGYT79uwurZ9bUlCxeRf7sbybqFd3lSO3fatz6",
+      "ign": "Swae",
+      "accountType": "player",
+      "country": "",
+      "flag": "",
+      "id": 1
+    }
+  ],
+  "teams": [],
+  "matches": []
+}

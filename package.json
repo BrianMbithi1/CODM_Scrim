@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "server": "json-server db.json -m ./node_modules/json-server-auth -r routes.json -p 3000",
+    "start:api": "node server.js",
     "start": "npx http-server . -p 8080",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
   },
@@ -12,7 +13,13 @@
     "coverageProvider": "v8",
     "collectCoverageFrom": ["js/**/*.js", "!js/main.js", "!js/login.js", "!js/ui.js"]
   },
-  "dependencies": { "json-server": "0.17.4", "json-server-auth": "2.1.0" },
-  "devDependencies": { "jest": "^29.7.0", "jest-environment-jsdom": "^29.7.0" },
+  "dependencies": {
+    "json-server": "0.17.4",
+    "json-server-auth": "2.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
   "license": "MIT"
 }

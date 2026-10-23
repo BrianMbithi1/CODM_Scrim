@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in | CODM Scrim Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar"><h1>Scrim Manager</h1></header>
+  <p id="status" role="alert" aria-live="assertive"></p>
+  <main>
+    <section aria-labelledby="login-title">
+      <h2 id="login-title">Log in</h2>
+      <form id="login-form" novalidate>
+        <label for="l-email">Email</label>
+        <input id="l-email" type="email" autocomplete="email" required>
+        <label for="l-password">Password</label>
+        <input id="l-password" type="password" autocomplete="current-password" required>
+        <button type="submit">Log in</button>
+      </form>
+    </section>
+    <section aria-labelledby="reg-title">
+      <h2 id="reg-title">Create account</h2>
+      <form id="register-form" novalidate>
+        <label for="r-ign">In-game name</label>
+        <input id="r-ign" required>
+        <label for="r-type">Account type</label>
+        <select id="r-type"><option value="player">Player</option><option value="team">Team</option></select>
+        <label for="r-country">Country</label>
+        <select id="r-country"><option value="">Select country</option></select>
+        <label for="r-email">Email</label>
+        <input id="r-email" type="email" autocomplete="email" required>
+        <label for="r-password">Password (6+ characters)</label>
+        <input id="r-password" type="password" autocomplete="new-password" required>
+        <button type="submit">Create account</button>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>
