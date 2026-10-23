@@ -34,7 +34,7 @@ HTML, CSS, JavaScript (ES modules), JSON Server 0.17.4, json-server-auth, Jest.
 Public API: https://restcountries.com
 
 ## Deployment
-- Frontend (GitHub Pages): https://brianmbithi1.github.io/CODM_Scrim/login.html
+- Frontend (GitHub Pages): https://brianmbithi1.github.io/CODM_Scrim/
 - API (Render, free tier): https://codm-scrim.onrender.com
 
 Note: the free Render tier has an ephemeral filesystem, so API data resets when the

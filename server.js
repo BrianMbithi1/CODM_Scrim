@@ -3,7 +3,7 @@ import path from 'path';
 import jsonServer from 'json-server';
 import auth from 'json-server-auth';
 
-// On a host with a persistent disk, set DATA_DIR to the disk's mount path (e.g. /var/data)
+
 const dataDir = process.env.DATA_DIR || '.';
 const dbFile = path.join(dataDir, 'db.json');
 if (!fs.existsSync(dbFile)) fs.copyFileSync('db.json', dbFile);
