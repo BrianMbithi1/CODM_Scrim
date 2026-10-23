@@ -34,6 +34,6 @@ HTML, CSS, JavaScript (ES modules), JSON Server 0.17.4, json-server-auth, Jest.
 Public API: https://restcountries.com
 
 ## Deployment
-- Frontend (GitHub Pages): _add link_
+- Frontend (GitHub Pages): https://brianmbithi1.github.io/CODM_Scrim/
 - API (host with persistent disk): _add link_
 
